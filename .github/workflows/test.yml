@@ -23,10 +23,10 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
     - name: Set Node.js 12.x
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
       with:
         node-version: 12.x
 
@@ -89,7 +89,7 @@ jobs:
 
     # Download Artifact #1 and verify the correctness of the content
     - name: 'Download artifact #1'
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
       with:
         name: 'Artifact-A'
         path: some/new/path
@@ -109,7 +109,7 @@ jobs:
 
     # Download Artifact #2 and verify the correctness of the content
     - name: 'Download artifact #2'
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
       with:
         name: 'artifact'
         path: some/other/path
@@ -130,7 +130,7 @@ jobs:
     
     # Download Artifact #3 and verify the correctness of the content
     - name: 'Download artifact #3'
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
       with:
         name: 'GZip-Artifact'
         path: gzip/artifact/path
@@ -150,7 +150,7 @@ jobs:
       shell: pwsh
 
     - name: 'Download artifact #4'
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
       with:
         name: 'Multi-Path-Artifact'
         path: multi/artifact
